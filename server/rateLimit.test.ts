@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
-import type { TrpcContext } from "./_core/context";
-import { enforceRateLimit } from "./_core/rateLimit";
+import type { TrpcContext } from "./_core/context.js";
+import { enforceRateLimit } from "./_core/rateLimit.js";
 
 function createCtx(ip = "203.0.113.10"): TrpcContext {
   return {

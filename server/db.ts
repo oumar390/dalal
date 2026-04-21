@@ -1,9 +1,9 @@
 import { neon } from "@neondatabase/serverless";
 import { drizzle, type NeonHttpDatabase } from "drizzle-orm/neon-http";
 import { eq, and, gte, desc, sql } from "drizzle-orm";
-import { users, communityPosts, reports, chatMessages } from "../drizzle/schema";
-import type { InsertUser, InsertCommunityPost, InsertReport, InsertChatMessage } from "../drizzle/schema";
-import { ENV } from "./_core/env";
+import { users, communityPosts, reports, chatMessages } from "../drizzle/schema.js";
+import type { InsertUser, InsertCommunityPost, InsertReport, InsertChatMessage } from "../drizzle/schema.js";
+import { ENV } from "./_core/env.js";
 
 let _db: NeonHttpDatabase | null = null;
 

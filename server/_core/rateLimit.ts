@@ -1,4 +1,4 @@
-import type { TrpcContext } from "./context";
+import type { TrpcContext } from "./context.js";
 import { TRPCError } from "@trpc/server";
 
 type Bucket = { windowStart: number; count: number };

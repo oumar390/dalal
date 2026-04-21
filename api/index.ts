@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { createExpressApp } from "../server/_core/app";
+import { createExpressApp } from "../server/_core/app.js";
 
 const app = createExpressApp();
 

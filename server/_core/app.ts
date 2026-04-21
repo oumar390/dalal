@@ -3,11 +3,11 @@ import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import cors from "cors";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
-import { registerOAuthRoutes } from "./oauth";
-import { appRouter } from "../routers";
-import { createContext } from "./context";
-import { originGate } from "./security";
-import { validateEnv } from "./validateEnv";
+import { registerOAuthRoutes } from "./oauth.js";
+import { appRouter } from "../routers.js";
+import { createContext } from "./context.js";
+import { originGate } from "./security.js";
+import { validateEnv } from "./validateEnv.js";
 
 export function createExpressApp() {
   const validatedEnv = validateEnv();

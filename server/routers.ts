@@ -1,12 +1,12 @@
 import { COOKIE_NAME } from "@shared/const";
-import { getSessionCookieOptions } from "./_core/cookies";
-import { enforceRateLimit } from "./_core/rateLimit";
-import { systemRouter } from "./_core/systemRouter";
-import { publicProcedure, router } from "./_core/trpc";
+import { getSessionCookieOptions } from "./_core/cookies.js";
+import { enforceRateLimit } from "./_core/rateLimit.js";
+import { systemRouter } from "./_core/systemRouter.js";
+import { publicProcedure, router } from "./_core/trpc.js";
 import { TRPCError } from "@trpc/server";
 import { z } from "zod";
-import { getRecentPosts, createPost, addSupport, addRelate, reportPost, getChatMessages, sendChatMessage } from "./db";
-import { invokeLLM } from "./_core/llm";
+import { getRecentPosts, createPost, addSupport, addRelate, reportPost, getChatMessages, sendChatMessage } from "./db.js";
+import { invokeLLM } from "./_core/llm.js";
 
 const SYSTEM_PROMPT = `Tu es un compagnon d'écoute bienveillant sur Dallaal, une plateforme de bien-être mental pour la jeunesse sénégalaise et ouest-africaine.
 
