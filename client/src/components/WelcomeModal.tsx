@@ -17,7 +17,7 @@ export default function WelcomeModal() {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/40 z-[100] flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black/40 z-[100] flex items-start justify-center p-4 pt-16 overflow-y-auto">
       <div
         className="bg-bg-main rounded-3xl max-w-md w-full p-8 relative"
         style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.15)' }}
